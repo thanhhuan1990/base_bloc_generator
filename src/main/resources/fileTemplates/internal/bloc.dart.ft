@@ -1,0 +1,22 @@
+import 'dart:async';
+import 'package:base_bloc/base_bloc.dart';
+import './${CLASS_NAME_LOWER}_state.dart';
+
+/// Created by ${USER} on ${DAY}/${MONTH_NAME_SHORT}/${YEAR}
+///
+/// Copyright ©${YEAR} by ${USER}. All rights reserved.
+class ${CLASS_NAME}Bloc extends BaseBloc<${CLASS_NAME}State> {
+
+  @override
+  ${CLASS_NAME}State get initialState => ${CLASS_NAME}State();
+
+  @override
+  Stream<${CLASS_NAME}State> mapEventToState(BaseEvent event) async* {
+
+    if(event is InitialEvent) {
+    } else if(event is ErrorEvent) {
+      yield state.copyWith(error: event.error);
+    }
+
+  }
+}

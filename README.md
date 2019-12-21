@@ -1,1 +1,1 @@
-# base_bloc_generator
+# Base BLoC Generator

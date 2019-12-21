@@ -1,0 +1,8 @@
+import 'package:meta/meta.dart';
+import 'package:base_bloc/base_bloc.dart';
+
+/// Created by ${USER} on ${DAY}/${MONTH_NAME_SHORT}/${YEAR}
+///
+/// Copyright ©${YEAR} by ${USER}. All rights reserved.
+@immutable
+class ${CLASS_NAME}Event extends BaseEvent {}

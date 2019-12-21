@@ -1,0 +1,25 @@
+import 'package:base_bloc/base_bloc.dart';
+import 'package:meta/meta.dart';
+
+/// Created by ${USER} on ${DAY}/${MONTH_NAME_SHORT}/${YEAR}
+///
+/// Copyright ©${YEAR} by ${USER}. All rights reserved.
+@immutable
+class ${CLASS_NAME}State extends BaseState {
+  final error;
+  final bool isLoading;
+
+  ${CLASS_NAME}State({
+    this.isLoading = false,
+    this.error,
+  });
+
+  ${CLASS_NAME}State copyWith({
+    bool isLoading,
+    var error,
+  }) =>
+    ${CLASS_NAME}State(
+      isLoading: isLoading ?? false,
+      error: error,
+    );
+}

@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>base_bloc_generator.base_bloc_generator</id>
+    <name>Base BLoC Generator</name>
+    <vendor email="thanhhuan1990@gmail.com" url="https://github.com/thanhhuan1990">ThanhHuan.VN</vendor>
+
+    <description><![CDATA[
+    Base Bloc Template Generator.<br>
+    Generates Widget, State, Events and BLoC classes.<br>
+    <a href="https://github.com/thanhhuan1990/base_bloc_generator">https://github.com/thanhhuan1990/base_bloc_generator</a>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <depends>Dart</depends>
+    <depends>io.flutter</depends>
+
+    <!-- Minimum and maximum build of IDE compatible with the plugin -->
+    <idea-version since-build="191.8026" until-build="191.8348"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="base_bloc_generator.action.GenerateBlocAction"
+                class="base_bloc_generator.action.GenerateBlocAction"
+                text="BLoC Generate"
+                description="Generate a new BLoC widget"
+                icon="/icons/dart_file.svg">
+            <add-to-group group-id="NewGroup" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
