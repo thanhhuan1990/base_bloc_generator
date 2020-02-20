@@ -39,7 +39,7 @@ object TemplateBuilder {
 
     private fun buildProperties(properties: java.util.Properties, bloc: Bloc) = properties.apply {
         put(Properties.ClassName, bloc.className)
-        put(Properties.ClassNameLower, CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.LOWER_UNDERSCORE, bloc.className))
+        put(Properties.ClassNameLower, CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.LOWER_UNDERSCORE, bloc.name))
     }
 
 }

@@ -14,8 +14,14 @@ class ${CLASS_NAME}Bloc extends BaseBloc<${CLASS_NAME}State> {
   Stream<${CLASS_NAME}State> mapEventToState(BaseEvent event) async* {
 
     if(event is InitialEvent) {
+
+      /// Implement InitialEvent
+
     } else if(event is ErrorEvent) {
+
+      /// Implement ErrorEvent
       yield state.copyWith(error: event.error);
+
     }
 
   }
