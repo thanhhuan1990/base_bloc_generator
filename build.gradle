@@ -20,13 +20,13 @@ apply plugin: 'org.jetbrains.kotlin.jvm'
 apply plugin: 'org.jetbrains.intellij'
 
 group 'huan.huynh.base_bloc_generator'
-version '2.0.3'
+version '2.0.4'
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2019.1'
+    version ideaVersion
     pluginName 'flutter-bloc-generator'
-    plugins = ['android', 'Kotlin', 'gradle', 'Dart:191.6183.87', 'io.flutter:35.2.2']
+    plugins = ['android', 'Kotlin', 'gradle', "Dart:$dartVersion", 'io.flutter:43.0.2']
 }
 
 patchPluginXml {

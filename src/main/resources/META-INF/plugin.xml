@@ -17,7 +17,7 @@
     <depends>io.flutter</depends>
 
     <!-- Minimum and maximum build of IDE compatible with the plugin -->
-    <idea-version since-build="191.8026" until-build="191.8348"/>
+    <idea-version since-build="191.8026" until-build="193.*"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
