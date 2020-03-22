@@ -1,6 +1,7 @@
 import 'package:base_bloc/base_bloc.dart';
 import 'package:flutter/material.dart';
 import './${CLASS_NAME_LOWER}_bloc.dart';
+import './${CLASS_NAME_LOWER}_events.dart';
 import './${CLASS_NAME_LOWER}_state.dart';
 
 /// Created by ${USER} on ${DAY}/${MONTH_NAME_SHORT}/${YEAR}
